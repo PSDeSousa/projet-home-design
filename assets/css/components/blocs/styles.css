@@ -1,0 +1,21 @@
+
+/**
+**************** bloc **************************
+**/
+/**
+**************** Mobile (par défaut) **************************
+**/
+.bloc
+{
+    width:90vw;
+    display:flex;
+    flex-direction: column;
+}
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px)
+{
+    .bloc
+    {width:33rem;}
+}

@@ -1,0 +1,155 @@
+
+/**
+**************** Mobile (par défaut) **************************
+**/
+/**
+***** Banner ********
+**/
+.principal-banner .banner
+{
+    width:100%;
+    position:relative;
+    left:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.principal-banner .banner img
+{
+    transform:translatex(20rem);
+}
+.principal-banner .bloc
+{
+    background-color:#666A6F;
+    color:#ECECEC;
+    transform:translatey(-2rem);
+    padding:1rem;
+    width:90%;
+}
+.principal-banner .cta
+{
+    justify-content:start;
+}
+/**
+***** Products ********
+**/
+.products .row
+{
+    flex-direction:column;
+}
+.carousel
+{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:stretch;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.products .carousel .item
+{
+    flex:1 1 calc(1 1 100%);
+}
+/**
+***** Vision ********
+**/
+.vision .banner
+{
+    width:87%;
+    position:relative;
+    left:13%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-image: url("/assets/images/illustrations/room.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:80vh;
+}
+.principal-banner .bloc
+{
+    background-color:#666A6F;
+    color:#ECECEC;
+    transform:translatey(-2rem);
+    padding:1rem;
+    width:90%;
+}
+.principal-banner .cta
+{
+    justify-content:start;
+}
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px)
+{
+    /**
+    ***** Banner ********
+    **/
+    .principal-banner .banner
+    {
+        position:relative;
+        left:0;
+        transform:translatex(0%)
+    }
+    .principal-banner .bloc
+    {
+        width:32rem;
+        position:absolute;
+        top:50%;
+        right:13%;
+        transform:translatey(-50%)
+    }
+        .principal-banner .banner img
+    {
+        transform:translatex(0rem);
+    }
+    /**
+    ***** Products ********
+    **/
+    .products .cell img
+    {
+        height:80vh;
+        object-fit: cover;
+    }
+    .products .column .cell img
+    {
+        height:36vh;
+        object-fit: cover;
+    }
+    .products .column
+    {
+        flex: 1.25 1 calc(33.333% - 1.5rem);
+        display:flex;
+        flex-direction:column;
+    }    
+    .products .carousel .item
+    {
+        flex:1 1 calc(26.666% - 1.5rem);
+    }
+    .products .carousel .item:first-child
+    {
+        flex:1.5 1 calc(40% - 1.5rem);
+    }
+    .products .column .item
+    {
+        flex: 1 1 calc(100%);
+    }   
+    /**
+    ***** vision ********
+    **/
+    .vision .banner
+    {
+        position:relative;
+        left:0;
+        transform:translatex(0%)
+    }
+    .vision .bloc
+    {
+        width:32rem;
+        position:absolute;
+        top:50%;
+        left:13%;
+        transform:translatey(-50%)
+    }
+}

@@ -1,0 +1,54 @@
+/**
+**************** Cards **************************
+**/
+/**
+**************** Mobile (par défaut) **************************
+**/
+
+    .cell
+    {
+        position:relative;
+    }
+    .card-product
+    {
+        width:100%;
+    }
+    .card-product .cell
+    {
+        width:100%
+    }
+    .card-product .cell img
+    {
+        width:100%;
+    }
+    .card-product .content
+    {
+        width:90%;
+        text-align:center;
+        transform:translatey(-40%);
+    }
+    .arrow
+    {
+        width:105%;
+        display:flex;
+        justify-content:space-between;
+        position:absolute;
+        top:50%;
+        transform:translatey(-50%)
+    }
+    .arrow img
+    {
+        background-color:#FFFFFF;
+        padding:0.5rem;
+    }
+    .arrow a:last-child
+    {
+        transform:rotate(180deg);
+    }
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px)
+{
+
+}

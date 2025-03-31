@@ -1,0 +1,27 @@
+/**
+**************** Police *****************************
+**/
+/**
+********* Proxima Nova *************************
+**/
+/**
+***** Proxima Nova Regular********
+**/
+@font-face {
+    font-family:'Proxima Nova Regular' ;
+    src: url(../fonts/proxima-nova/proxima-nova-regular.ttf);
+}
+/**
+***** Proxima Nova semi-bold ********
+**/
+@font-face {
+    font-family:'Proxima Nova Semi-bold' ;
+    src: url(../fonts/proxima-nova/proxima-nova-semibold.ttf);
+}
+/**
+***** Proxima Nova bold ********
+**/
+@font-face {
+    font-family:'Proxima Nova Bold' ;
+    src: url(../fonts/proxima-nova/proximanova-bold.otf);
+}

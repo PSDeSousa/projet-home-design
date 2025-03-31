@@ -1,0 +1,102 @@
+/**
+**************** Initialisation **************************
+**/
+*{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+    }
+body
+{
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 1.25rem;
+    color: #616161;
+    background-color:#FFFFFF;
+}
+main
+{
+    padding-top:6rem;
+}
+/**
+**************** Mobile (par défaut) **************************
+**/
+/**
+***** Balises ********
+**/
+h1
+{
+    color:#FFFFFF;
+}
+/**
+***** Containers - rows et columns ********
+**/
+.container-flex-fluid
+{
+    width:100%;
+    position:relative;
+}
+.container-flex
+{
+    width:90%;
+    position:relative;
+    margin:auto;
+}
+.row
+{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.column
+{
+    display:flex;
+    flex-direction: column;
+}
+.mobile
+{
+    visibility:visible;
+    position:relative;
+}
+.desktop
+{
+    visibility:hidden;
+    position:absolute;
+    top:0;
+}
+.hidden
+{
+    display:none;
+}
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px)
+{
+        main
+    {
+        padding-top:8rem;
+    }
+    .container-flex
+    {
+        width:74%;
+        flex-direction:row;
+    }
+    .container-flex-fluid
+    {
+        flex-direction:row;
+    }
+    .mobile
+    {
+        visibility:hidden;
+        position:absolute;
+        top:0;
+    }
+    .desktop
+    {
+        visibility:visible;
+        position:relative;
+    }
+}

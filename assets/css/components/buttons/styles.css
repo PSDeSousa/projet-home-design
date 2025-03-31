@@ -1,0 +1,60 @@
+/**
+**************** buttons **************************
+**/
+/**
+**************** Mobile (par défaut) **************************
+**/
+.cta
+{
+    display:flex;
+    justify-content:center;
+}
+.cta a
+{
+    text-decoration: none;
+    font-family:'Proxima Nova Bold', sans-serif;
+    font-size:1rem;
+    color:#FFFFFF;
+}
+.primary-button, .secondary-button, .terciary-button
+{
+    height:2.8rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.primary-button
+{
+    width:11rem;
+    background-color: #111010;
+}
+.secondary-button
+{
+    width:12rem;
+    background-color: #111010;
+}
+.terciary-button
+{
+    width:11rem;
+    background-color: #FFFFFF;
+}
+.terciary-button a
+{
+    color:#111010;
+}
+.quartenary-button
+{
+    width:3.7rem;
+    height:3.7rem;
+    background-color: #FFFFFF;
+}
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px)
+{
+    .primary-button, .secondary-button, .terciary-button
+    {
+        height:3.2rem;
+    }
+}
